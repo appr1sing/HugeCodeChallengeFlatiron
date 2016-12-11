@@ -9,16 +9,17 @@
 import UIKit
 
 
+
 class CurrencyTableViewController: UITableViewController {
 
     var currencies = Currencies()
     var multiplier : Double = 1.0
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAPI()
         setupNotifications()
-        
     }
     
     func setupAPI() {
@@ -27,9 +28,12 @@ class CurrencyTableViewController: UITableViewController {
         
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return currencies.selectedCurrency.count
     }
 
@@ -70,12 +74,10 @@ extension CurrencyTableViewController {
     
     func reloadTableView() {
         
-        print("RELOAD")
         currencies.currency = []
         currencies.selectedCurrency = []
         setupAPI()
         
-        //reload the USD text label
         let defaultAmount = "1.00"
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: notificationKey), object: defaultAmount)
         

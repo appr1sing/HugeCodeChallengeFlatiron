@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class ViewController: UIViewController {
 
     //var multiplier : Double?
@@ -16,13 +15,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var containerView: UIView!
     var isSwitched = true
-    
+    var test = [Currency]()
     var testView : UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         add(asChildViewController: currencyTableVC)
+        
         
     }
     
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         
     }()
     
-    
+        
     
     private func add(asChildViewController viewController: UIViewController) {
         

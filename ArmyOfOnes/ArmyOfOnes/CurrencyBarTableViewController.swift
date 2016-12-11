@@ -10,6 +10,7 @@ import UIKit
 
 class CurrencyBarTableViewController: CurrencyTableViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,7 +18,6 @@ class CurrencyBarTableViewController: CurrencyTableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("VIEW DID")
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -28,6 +28,7 @@ class CurrencyBarTableViewController: CurrencyTableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "bar", for: indexPath) as! CurrencyBarTableViewCell
         cell.currencyLabel.text = currencies.selectedCurrency[indexPath.row].name
+        cell.rateLabel.text = String(currencies.selectedCurrency[indexPath.row].roundedRate)
         return cell
         
     }
@@ -35,6 +36,7 @@ class CurrencyBarTableViewController: CurrencyTableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return tableView.bounds.height / CGFloat(currencies.selectedCurrency.count)
     }
+    
     
     
 }
