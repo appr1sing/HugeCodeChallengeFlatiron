@@ -22,8 +22,6 @@
 		A76B6C9E1DF3B94A00763EF4 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76B6C9D1DF3B94A00763EF4 /* CurrencyTableViewCell.swift */; };
 		A76B6CA21DF3CCCB00763EF4 /* CurrencytoCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76B6CA11DF3CCCB00763EF4 /* CurrencytoCountry.swift */; };
 		A76B6CA41DF3DFB600763EF4 /* USDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76B6CA31DF3DFB600763EF4 /* USDViewController.swift */; };
-		A77961451DF9CC9700752818 /* CurrencyBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77961441DF9CC9700752818 /* CurrencyBarTableViewController.swift */; };
-		A77961471DFA005600752818 /* CurrencyBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77961461DFA005600752818 /* CurrencyBarTableViewCell.swift */; };
 		A785CB511DF3492400F1A5B3 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785CB501DF3492400F1A5B3 /* Currency.swift */; };
 		A7B10B611DFE863A0006A4AF /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B10B601DFE863A0006A4AF /* GraphViewController.swift */; };
 /* End PBXBuildFile section */
@@ -46,8 +44,6 @@
 		A76B6C9D1DF3B94A00763EF4 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		A76B6CA11DF3CCCB00763EF4 /* CurrencytoCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencytoCountry.swift; sourceTree = "<group>"; };
 		A76B6CA31DF3DFB600763EF4 /* USDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USDViewController.swift; sourceTree = "<group>"; };
-		A77961441DF9CC9700752818 /* CurrencyBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyBarTableViewController.swift; sourceTree = "<group>"; };
-		A77961461DFA005600752818 /* CurrencyBarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyBarTableViewCell.swift; sourceTree = "<group>"; };
 		A785CB501DF3492400F1A5B3 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		A7B10B601DFE863A0006A4AF /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				A76B6C9D1DF3B94A00763EF4 /* CurrencyTableViewCell.swift */,
-				A77961461DFA005600752818 /* CurrencyBarTableViewCell.swift */,
 				A74B9D881DFD191B00C4364F /* ReloadButtonView.swift */,
 				A74B9D8A1DFD198800C4364F /* ReloadButton.swift */,
 				A74B9D8C1DFD1B5C00C4364F /* BarChartButtonView.swift */,
@@ -131,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				A712A0CE1DF27808004C422B /* ViewController.swift */,
-				A77961441DF9CC9700752818 /* CurrencyBarTableViewController.swift */,
 				A76B6C9B1DF3AE1000763EF4 /* CurrencyTableViewController.swift */,
 				A76B6CA31DF3DFB600763EF4 /* USDViewController.swift */,
 				A7B10B601DFE863A0006A4AF /* GraphViewController.swift */,
@@ -221,10 +215,8 @@
 				A76B6C9C1DF3AE1000763EF4 /* CurrencyTableViewController.swift in Sources */,
 				A74B9D8B1DFD198800C4364F /* ReloadButton.swift in Sources */,
 				A712A0E21DF28111004C422B /* Currencies.swift in Sources */,
-				A77961451DF9CC9700752818 /* CurrencyBarTableViewController.swift in Sources */,
 				A785CB511DF3492400F1A5B3 /* Currency.swift in Sources */,
 				A76B6CA21DF3CCCB00763EF4 /* CurrencytoCountry.swift in Sources */,
-				A77961471DFA005600752818 /* CurrencyBarTableViewCell.swift in Sources */,
 				A712A0CF1DF27808004C422B /* ViewController.swift in Sources */,
 				A712A0CD1DF27808004C422B /* AppDelegate.swift in Sources */,
 				A712A0E01DF27FF2004C422B /* CurrencyAPIClient.swift in Sources */,

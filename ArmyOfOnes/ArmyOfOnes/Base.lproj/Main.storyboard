@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1ZZ-eC-Mdg" id="L7X-8o-Pns">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MmX-Em-HnW">
@@ -97,69 +97,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MtN-YF-qTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-567" y="123"/>
-        </scene>
-        <!--Currency Bar Table View Controller-->
-        <scene sceneID="azI-2H-okm">
-            <objects>
-                <tableViewController storyboardIdentifier="CurrencyBarVC" id="CpM-J9-D8c" customClass="CurrencyBarTableViewController" customModule="ArmyOfOnes" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="5yT-n2-qer">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.25813859700000003" green="0.59053134920000006" blue="0.99737495180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="separatorColor" red="0.25813859700000003" green="0.59053134920000006" blue="0.99737495180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.25813859700000003" green="0.59053134920000006" blue="0.99737495180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="bar" rowHeight="80" id="Clf-es-N7M" customClass="CurrencyBarTableViewCell" customModule="ArmyOfOnes" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Clf-es-N7M" id="sbm-P6-EXc">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFm-RG-9c1">
-                                            <rect key="frame" x="137" y="3" width="100" height="72"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="100" id="6zm-pT-EEO"/>
-                                                <constraint firstAttribute="height" constant="72" id="XeD-bb-aPT"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwQ-sR-A8H">
-                                            <rect key="frame" x="325" y="29" width="42" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="42" id="HV9-NR-1Pi"/>
-                                                <constraint firstAttribute="height" constant="21" id="yHI-fh-QEw"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="fFm-RG-9c1" firstAttribute="centerY" secondItem="sbm-P6-EXc" secondAttribute="centerY" id="1RS-iG-HCs"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="OwQ-sR-A8H" secondAttribute="bottom" constant="21" id="co9-wt-K3H"/>
-                                        <constraint firstItem="OwQ-sR-A8H" firstAttribute="trailing" secondItem="sbm-P6-EXc" secondAttribute="trailingMargin" id="nfa-kr-KlD"/>
-                                        <constraint firstItem="fFm-RG-9c1" firstAttribute="centerX" secondItem="sbm-P6-EXc" secondAttribute="centerX" id="sBN-ra-rsp"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.25813859700000003" green="0.59053134920000006" blue="0.99737495180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="currencyLabel" destination="fFm-RG-9c1" id="kJ7-E9-m3r"/>
-                                    <outlet property="rateLabel" destination="OwQ-sR-A8H" id="5q7-0K-n47"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="CpM-J9-D8c" id="sEy-g6-Ejo"/>
-                            <outlet property="delegate" destination="CpM-J9-D8c" id="KZq-Xf-45j"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vfg-eZ-F3J" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1337" y="123"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">

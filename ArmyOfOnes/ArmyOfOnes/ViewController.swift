@@ -10,32 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    //var multiplier : Double?
-    
-    
     @IBOutlet weak var containerView: UIView!
     var isSwitched = true
-    var test = [Currency]()
-    var testView : UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         add(asChildViewController: currencyTableVC)
-        
         
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
-    
-    private lazy var currencyBarVC : CurrencyBarTableViewController = {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        var vc = storyboard.instantiateViewController(withIdentifier: "CurrencyBarVC") as! CurrencyBarTableViewController
-        self.add(asChildViewController: vc)
-        return vc
-        
-    }()
     
     private lazy var currencyTableVC : CurrencyTableViewController = {
         
@@ -46,8 +30,6 @@ class ViewController: UIViewController {
         
     }()
     
-        
-    
     private func add(asChildViewController viewController: UIViewController) {
         
         addChildViewController(viewController)
@@ -56,14 +38,6 @@ class ViewController: UIViewController {
         viewController.view.backgroundColor = UIColor.clear
         viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         viewController.didMove(toParentViewController: self)
-        
-    }
-    
-    private func remove(asChildViewController viewController: UIViewController) {
-        
-        viewController.willMove(toParentViewController: self)
-        viewController.view.removeFromSuperview()
-        viewController.removeFromParentViewController()
         
     }
     
