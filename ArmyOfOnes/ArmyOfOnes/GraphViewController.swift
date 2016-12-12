@@ -233,7 +233,6 @@ class GraphViewController: UIViewController {
             title.textAlignment = .left
         }
         
-        
     }
     
     private func animateLabel(_ label: UILabel, rate: Double) {
@@ -256,9 +255,7 @@ class GraphViewController: UIViewController {
             
         }, completion: nil)
         
-        
     }
-    
     
     func dismissVC() {
         dismiss(animated: true, completion: nil)

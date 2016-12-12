@@ -10,8 +10,6 @@ import UIKit
 
 class CurrencyTableViewCell: UITableViewCell {
     
-    var multiplier : Double = 1.0
-    
     
     @IBOutlet weak var currencyView: UIView!
        
@@ -20,8 +18,6 @@ class CurrencyTableViewCell: UITableViewCell {
     @IBOutlet weak var currencyLabel: UILabel!
     
     @IBOutlet weak var rateLabel: UILabel!
-    
-        
     
     
 }

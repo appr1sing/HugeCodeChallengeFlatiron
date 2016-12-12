@@ -77,7 +77,7 @@ extension USDViewController : UITextFieldDelegate {
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: notificationKey), object: amount)
         } else {
             //Animate result
-            
+            textField.shake()
         }
         
     }
@@ -86,11 +86,13 @@ extension USDViewController : UITextFieldDelegate {
         
         let regex = "[+-]?[0-9]{1,3}(?:,?[0-9]{3})*(?:\\.[0-9]{1,2})?"
         let currencyTestOne = NSPredicate(format: "SELF MATCHES %@", regex)
-        
         if currencyTestOne.evaluate(with: text) { return true }
         return false
         
     }
+    
+    
+    
     
 }
 
