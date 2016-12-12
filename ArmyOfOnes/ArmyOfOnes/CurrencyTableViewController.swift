@@ -12,7 +12,7 @@ import UIKit
 
 class CurrencyTableViewController: UITableViewController {
 
-    var currencies = Currencies()
+    var currencies = CurrencyModel()
     var multiplier : Double = 1.0
     
     
@@ -77,7 +77,6 @@ extension CurrencyTableViewController {
         currencies.currency = []
         currencies.selectedCurrency = []
         setupAPI()
-        
         let defaultAmount = "1.00"
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: notificationKey), object: defaultAmount)
         

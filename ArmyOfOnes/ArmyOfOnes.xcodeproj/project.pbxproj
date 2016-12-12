@@ -13,7 +13,7 @@
 		A712A0D41DF27808004C422B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A712A0D31DF27808004C422B /* Assets.xcassets */; };
 		A712A0D71DF27808004C422B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A712A0D51DF27808004C422B /* LaunchScreen.storyboard */; };
 		A712A0E01DF27FF2004C422B /* CurrencyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A712A0DF1DF27FF2004C422B /* CurrencyAPIClient.swift */; };
-		A712A0E21DF28111004C422B /* Currencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A712A0E11DF28111004C422B /* Currencies.swift */; };
+		A712A0E21DF28111004C422B /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A712A0E11DF28111004C422B /* CurrencyModel.swift */; };
 		A74B9D891DFD191B00C4364F /* ReloadButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74B9D881DFD191B00C4364F /* ReloadButtonView.swift */; };
 		A74B9D8B1DFD198800C4364F /* ReloadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74B9D8A1DFD198800C4364F /* ReloadButton.swift */; };
 		A74B9D8D1DFD1B5C00C4364F /* BarChartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74B9D8C1DFD1B5C00C4364F /* BarChartButtonView.swift */; };
@@ -23,6 +23,7 @@
 		A76B6CA21DF3CCCB00763EF4 /* CurrencytoCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76B6CA11DF3CCCB00763EF4 /* CurrencytoCountry.swift */; };
 		A76B6CA41DF3DFB600763EF4 /* USDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76B6CA31DF3DFB600763EF4 /* USDViewController.swift */; };
 		A785CB511DF3492400F1A5B3 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785CB501DF3492400F1A5B3 /* Currency.swift */; };
+		A78EEA091DFF03A9005BAE45 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78EEA081DFF03A9005BAE45 /* Extensions.swift */; };
 		A7B10B611DFE863A0006A4AF /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B10B601DFE863A0006A4AF /* GraphViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +36,7 @@
 		A712A0D61DF27808004C422B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A712A0D81DF27808004C422B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A712A0DF1DF27FF2004C422B /* CurrencyAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyAPIClient.swift; sourceTree = "<group>"; };
-		A712A0E11DF28111004C422B /* Currencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currencies.swift; sourceTree = "<group>"; };
+		A712A0E11DF28111004C422B /* CurrencyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
 		A74B9D881DFD191B00C4364F /* ReloadButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReloadButtonView.swift; sourceTree = "<group>"; };
 		A74B9D8A1DFD198800C4364F /* ReloadButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReloadButton.swift; sourceTree = "<group>"; };
 		A74B9D8C1DFD1B5C00C4364F /* BarChartButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartButtonView.swift; sourceTree = "<group>"; };
@@ -45,6 +46,7 @@
 		A76B6CA11DF3CCCB00763EF4 /* CurrencytoCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencytoCountry.swift; sourceTree = "<group>"; };
 		A76B6CA31DF3DFB600763EF4 /* USDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USDViewController.swift; sourceTree = "<group>"; };
 		A785CB501DF3492400F1A5B3 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		A78EEA081DFF03A9005BAE45 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A7B10B601DFE863A0006A4AF /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,9 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				A712A0DF1DF27FF2004C422B /* CurrencyAPIClient.swift */,
-				A712A0E11DF28111004C422B /* Currencies.swift */,
+				A712A0E11DF28111004C422B /* CurrencyModel.swift */,
 				A785CB501DF3492400F1A5B3 /* Currency.swift */,
 				A76B6CA11DF3CCCB00763EF4 /* CurrencytoCountry.swift */,
+				A78EEA081DFF03A9005BAE45 /* Extensions.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -214,8 +217,9 @@
 				A7B10B611DFE863A0006A4AF /* GraphViewController.swift in Sources */,
 				A76B6C9C1DF3AE1000763EF4 /* CurrencyTableViewController.swift in Sources */,
 				A74B9D8B1DFD198800C4364F /* ReloadButton.swift in Sources */,
-				A712A0E21DF28111004C422B /* Currencies.swift in Sources */,
+				A712A0E21DF28111004C422B /* CurrencyModel.swift in Sources */,
 				A785CB511DF3492400F1A5B3 /* Currency.swift in Sources */,
+				A78EEA091DFF03A9005BAE45 /* Extensions.swift in Sources */,
 				A76B6CA21DF3CCCB00763EF4 /* CurrencytoCountry.swift in Sources */,
 				A712A0CF1DF27808004C422B /* ViewController.swift in Sources */,
 				A712A0CD1DF27808004C422B /* AppDelegate.swift in Sources */,

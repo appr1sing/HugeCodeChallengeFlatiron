@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Currencies {
+class CurrencyModel {
     
     var date : String?
     var currencies = [ String : Double ]()
@@ -28,7 +28,6 @@ class Currencies {
 
                 OperationQueue.main.addOperation {
                     
-                    // GBP, EUR, JPY, BRL
                     if key == "GBP" || key == "EUR" || key == "JPY" || key == "BRL" {
                         self.selectedCurrency.append(Currency(name: key, rate: value))
                     } else {
@@ -46,13 +45,5 @@ class Currencies {
     
 }
 
-extension Double {
-    func roundTo(places num: Int) -> Double {
-        let divisor = pow(10.0, Double(num))
-        return (self * divisor).rounded() / divisor
-        
-    }
-    
-}
 
 

@@ -9,7 +9,7 @@
 import Foundation
 typealias JSON = [ String : Any ]
 
-struct CurrencyAPIClient {
+class CurrencyAPIClient {
     
     static let shared = CurrencyAPIClient()
     

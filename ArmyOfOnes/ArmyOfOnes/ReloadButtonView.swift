@@ -70,13 +70,9 @@ public class ReloadButtonView : NSObject {
         bezier2Path.stroke()
         
         context.restoreGState()
-        
         context.restoreGState()
         
     }
-    
-    
-    
     
     @objc public enum ResizingBehavior: Int {
         case aspectFit /// The content is proportionally resized to fit into the target rectangle.
