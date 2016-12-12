@@ -24,8 +24,19 @@
 		A76B6CA41DF3DFB600763EF4 /* USDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76B6CA31DF3DFB600763EF4 /* USDViewController.swift */; };
 		A785CB511DF3492400F1A5B3 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785CB501DF3492400F1A5B3 /* Currency.swift */; };
 		A78EEA091DFF03A9005BAE45 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78EEA081DFF03A9005BAE45 /* Extensions.swift */; };
+		A78EEA111DFF4FB4005BAE45 /* ArmyOfOnesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78EEA101DFF4FB4005BAE45 /* ArmyOfOnesTests.swift */; };
 		A7B10B611DFE863A0006A4AF /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B10B601DFE863A0006A4AF /* GraphViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A78EEA131DFF4FB4005BAE45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A712A0C11DF27808004C422B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A712A0C81DF27808004C422B;
+			remoteInfo = ArmyOfOnes;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A712A0C91DF27808004C422B /* ArmyOfOnes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArmyOfOnes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,11 +58,21 @@
 		A76B6CA31DF3DFB600763EF4 /* USDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USDViewController.swift; sourceTree = "<group>"; };
 		A785CB501DF3492400F1A5B3 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		A78EEA081DFF03A9005BAE45 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A78EEA0E1DFF4FB4005BAE45 /* ArmyOfOnesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArmyOfOnesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A78EEA101DFF4FB4005BAE45 /* ArmyOfOnesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmyOfOnesTests.swift; sourceTree = "<group>"; };
+		A78EEA121DFF4FB4005BAE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7B10B601DFE863A0006A4AF /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A712A0C61DF27808004C422B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A78EEA0B1DFF4FB4005BAE45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -66,6 +87,7 @@
 			children = (
 				A712A0CB1DF27808004C422B /* ArmyOfOnes */,
 				A712A0DE1DF27821004C422B /* Supporting Files */,
+				A78EEA0F1DFF4FB4005BAE45 /* ArmyOfOnesTests */,
 				A712A0CA1DF27808004C422B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				A712A0C91DF27808004C422B /* ArmyOfOnes.app */,
+				A78EEA0E1DFF4FB4005BAE45 /* ArmyOfOnesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +107,6 @@
 				A76B6CA71DF3E2E200763EF4 /* Model */,
 				A76B6CA81DF3E2E800763EF4 /* View */,
 				A76B6CA91DF3E2ED00763EF4 /* Controller */,
-				A712A0D01DF27808004C422B /* Main.storyboard */,
 			);
 			path = ArmyOfOnes;
 			sourceTree = "<group>";
@@ -92,9 +114,10 @@
 		A712A0DE1DF27821004C422B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A712A0D01DF27808004C422B /* Main.storyboard */,
+				A712A0D51DF27808004C422B /* LaunchScreen.storyboard */,
 				A712A0CC1DF27808004C422B /* AppDelegate.swift */,
 				A712A0D31DF27808004C422B /* Assets.xcassets */,
-				A712A0D51DF27808004C422B /* LaunchScreen.storyboard */,
 				A712A0D81DF27808004C422B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -136,6 +159,15 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		A78EEA0F1DFF4FB4005BAE45 /* ArmyOfOnesTests */ = {
+			isa = PBXGroup;
+			children = (
+				A78EEA101DFF4FB4005BAE45 /* ArmyOfOnesTests.swift */,
+				A78EEA121DFF4FB4005BAE45 /* Info.plist */,
+			);
+			path = ArmyOfOnesTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +188,24 @@
 			productReference = A712A0C91DF27808004C422B /* ArmyOfOnes.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A78EEA0D1DFF4FB4005BAE45 /* ArmyOfOnesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A78EEA151DFF4FB4005BAE45 /* Build configuration list for PBXNativeTarget "ArmyOfOnesTests" */;
+			buildPhases = (
+				A78EEA0A1DFF4FB4005BAE45 /* Sources */,
+				A78EEA0B1DFF4FB4005BAE45 /* Frameworks */,
+				A78EEA0C1DFF4FB4005BAE45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A78EEA141DFF4FB4005BAE45 /* PBXTargetDependency */,
+			);
+			name = ArmyOfOnesTests;
+			productName = ArmyOfOnesTests;
+			productReference = A78EEA0E1DFF4FB4005BAE45 /* ArmyOfOnesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,6 +220,12 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = CJ24M7DKLZ;
 						ProvisioningStyle = Automatic;
+					};
+					A78EEA0D1DFF4FB4005BAE45 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = CJ24M7DKLZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A712A0C81DF27808004C422B;
 					};
 				};
 			};
@@ -187,6 +243,7 @@
 			projectRoot = "";
 			targets = (
 				A712A0C81DF27808004C422B /* ArmyOfOnes */,
+				A78EEA0D1DFF4FB4005BAE45 /* ArmyOfOnesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,6 +256,13 @@
 				A712A0D71DF27808004C422B /* LaunchScreen.storyboard in Resources */,
 				A712A0D41DF27808004C422B /* Assets.xcassets in Resources */,
 				A712A0D21DF27808004C422B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A78EEA0C1DFF4FB4005BAE45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +291,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A78EEA0A1DFF4FB4005BAE45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78EEA111DFF4FB4005BAE45 /* ArmyOfOnesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A78EEA141DFF4FB4005BAE45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A712A0C81DF27808004C422B /* ArmyOfOnes */;
+			targetProxy = A78EEA131DFF4FB4005BAE45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A712A0D01DF27808004C422B /* Main.storyboard */ = {
@@ -368,6 +448,34 @@
 			};
 			name = Release;
 		};
+		A78EEA161DFF4FB4005BAE45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CJ24M7DKLZ;
+				INFOPLIST_FILE = ArmyOfOnesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AppRising.ArmyOfOnesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArmyOfOnes.app/ArmyOfOnes";
+			};
+			name = Debug;
+		};
+		A78EEA171DFF4FB4005BAE45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CJ24M7DKLZ;
+				INFOPLIST_FILE = ArmyOfOnesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AppRising.ArmyOfOnesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArmyOfOnes.app/ArmyOfOnes";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -388,6 +496,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A78EEA151DFF4FB4005BAE45 /* Build configuration list for PBXNativeTarget "ArmyOfOnesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A78EEA161DFF4FB4005BAE45 /* Debug */,
+				A78EEA171DFF4FB4005BAE45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

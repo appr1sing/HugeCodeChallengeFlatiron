@@ -28,7 +28,6 @@ class CurrencyAPIClient {
             OperationQueue.main.addOperation {
                 completion(responseJSON)
             }
-            
         }
         task.resume()
         

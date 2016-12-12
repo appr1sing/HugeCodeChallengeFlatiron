@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 class CurrencyTableViewController: UITableViewController {
 
     var currencies = CurrencyModel()
