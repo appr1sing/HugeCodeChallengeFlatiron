@@ -69,19 +69,12 @@ class ViewController: UIViewController {
     
     @IBAction func testButton(_ sender: Any) {
         
-        if isSwitched {
-            
-            remove(asChildViewController: currencyTableVC)
-            add(asChildViewController: currencyBarVC)
-            isSwitched = false
-            
-        } else {
-            
-            remove(asChildViewController: currencyBarVC)
-            add(asChildViewController: currencyTableVC)
-            isSwitched = true
-            
-        }
+        let graphVC = GraphViewController()
+        graphVC.currencies = currencyTableVC.currencies.selectedCurrency
+        graphVC.modalPresentationStyle = .overCurrentContext
+        graphVC.modalTransitionStyle = .crossDissolve
+        present(graphVC, animated: true, completion: nil)
+        
         
     }
     
